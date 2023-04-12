@@ -7,7 +7,7 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 app.use(express.json({}));
 
-const whiteList=[process.env.ORIGIN,"https://prueba-pelis-front.onrender.com"];
+const whiteList=[process.env.ORIGIN,process.env.ORIGIN1,"https://prueba-pelis-front.onrender.com"];
 const corsOptions ={
     origin:'*', 
     credentials:true,            //access-control-allow-credentials:true
