@@ -21,7 +21,7 @@ export const mostrarUsuarioController=async(req,res)=>{
         //console.log(respuesta);
         return res.status(201).json({msj:"se muestra con satisfaccion",datos:respuesta});
     } catch (error) {
-        //console.log(error);
+        console.log(error);
         return res.status(400).json({error:"no se pueden cargar datos"});
 
     }
