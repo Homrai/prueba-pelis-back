@@ -18,10 +18,10 @@ export const crearPeliController=async(req,res)=>{
 export const mostrarPeliController=async(req,res)=>{
     try {
         const respuesta = await buscarPelis()
-        console.log(respuesta);
+        //console.log(respuesta);
         return res.status(201).json({msj:"se muestra con satisfaccion",datos:respuesta});
     } catch (error) {
-        console.log(error);
+        //console.log(error);
         return res.status(400).json({error:"no se pueden cargar datos"});
 
     }
